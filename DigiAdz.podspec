@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DigiAdz"
-  s.version      = "1.0.2"
-  s.summary      = "DigiAdz Framework is used to serve adds"
+  s.version      = “1.0.3”
+  s.summary      = "DigiAdz Framework is used to serve adds."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -51,10 +51,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "ketan" => "ketandhoka16@gmail.com" }
-  # Or just: s.author    = "ketan"
-  # s.authors            = { "ketan" => "ketandhoka16@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/ketan"
+  s.author             = { "" => "" }
+  # Or just: s.author    = ""
+  # s.authors            = { "" => "" }
+  # s.social_media_url   = "http://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,10 +64,12 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
-   s.swift_version = "4.2"
+
+ s.swift_version = "4.2"
+
 
   #  When using multiple platforms
-  s.ios.deployment_target = "9.0"
+   s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -88,9 +90,9 @@ Pod::Spec.new do |s|
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
-  #
+  #  commented Fyber in this SDK
 
-   s.source_files  = "DigiAdz","AppTracker","HyprMX","IronSourceSDK"
+  s.source_files  = "DigiAdz","AppTracker","HyprMX","IronSourceSDK"
   s.exclude_files = "Classes/Exclude"
   s.vendored_frameworks = 'DigiAdz/DigiAdz.framework','AppTracker/AppTracker.framework','HyprMX/HyprMX.framework','IronSourceSDK/IronSource.framework'
 
@@ -115,6 +117,5 @@ Pod::Spec.new do |s|
     #s.dependency "IronSourceSDK"
     s.dependency "UnityAds"
     s.dependency "VungleSDK-iOS"
-
 
 end
